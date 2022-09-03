@@ -1,10 +1,122 @@
----
-title: 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="ie=edge"
+  >
+  <title>
+    首頁
+  </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Paytone+One&family=Squada+One&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+  <link
+    rel="stylesheet"
+    href="./assets/style/all.css"
+  >
+  <!-- <script
+    src="https://kit.fontawesome.com/6f420df734.js"
+    crossorigin="anonymous"
+  ></script> -->
+</head>
+
+<body class="bg-light">
+  <nav class=" py-4 border-b border-black lg:py-0 lg:flex lg:justify-end">
+    <div class="container lg:basis-11/12 flex justify-between items-center">
+      <h1><a
+          id="logo"
+          href="/week8"
+        ><img
+            class="w-[86px] lg:w-[190px]"
+            src="./assets/images/logo.svg"
+            alt="logo.svg"
+          ></a></h1>
+      <div
+        id="search"
+        class="hidden items-center w-full"
+      >
+        <i
+          id="backMenu"
+          class="fas fa-angle-left"
+        ></i>
+        <div class="w-full px-4">
+          <input
+            type="text"
+            placeholder="搜尋作品名稱、藝術家名稱"
+            class=" bg-transparent p-0 border-0 w-full focus:ring-transparent"
+          >
+        </div>
+      </div>
+      <ul class="flex gap-x-6 lg:gap-0">
+        <li class="hidden lg:py-8 lg:block border-x lg:-mr-[1px]">
+          <div class="flex items-center w-full lg:px-12 ">
+            <div class="w-[288px] mr-6">
+              <input
+                type="text"
+                placeholder="搜尋作品名稱、藝術家名稱"
+                class="bg-transparent p-0 border-0 w-full focus:ring-transparent"
+              >
+            </div>
+            <i class="text-2xl fas fa-search"></i>
+          </div>
+        </li>
+        <li class="hidden font-bold border-x lg:block lg:px-12 lg:py-8"><a href="#">探索</a></li>
+        <li class="hidden font-bold border-x lg:block lg:px-12 lg:py-8 lg:-ml-[1px]"><a href="#">市值</a></li>
+        <li class="hidden font-bold lg:block lg:px-12 lg:py-8"><a href="#"><i class="fas fa-wallet"></i></a></li>
+        <li
+          id="searchBtn"
+          class="lg:hidden"
+        ><i class="text-2xl fas fa-search"></i></li>
+        <li
+          class="lg:hidden"
+          id="mMenuBtn"
+        >
+          <i class="text-2xl fas fa-bars"></i>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div
+    class="bg-white hidden"
+    id="mMenu"
+  >
+    <div class="container">
+      <ul class="text-center pb-6">
+        <li class="py-6 border-b"><a
+            class="block font-bold text-lg"
+            href="#"
+          >探索</a></li>
+        <li class="py-6"><a
+            class="block font-bold text-lg"
+            href="#"
+          >市值</a></li>
+        <li class="bg-main border border-1 border-black py-3 text-white"><a
+            class="block"
+            href="#"
+          >連結錢包</a></li>
+      </ul>
+    </div>
+  </div>
+
+  
 
 <section class="lg:py-10">
   <ul class="flex flex-wrap lg:container">
@@ -364,3 +476,15 @@ current: index
    
   </div>
 </section>
+
+    <footer class="py-6 text-center">
+      © ART NFT. All Rights Reserved
+    </footer>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
