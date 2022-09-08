@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="ie=edge"
+  >
+  <title>
+    首頁
+  </title>
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Paytone+One&family=Squada+One&display=swap"
+    rel="stylesheet"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="./assets/style/all.css"
+  >
+  <!-- <script
+    src="https://kit.fontawesome.com/6f420df734.js"
+    crossorigin="anonymous"
+  ></script> -->
+</head>
+
+<body class="bg-light">
+  <nav class=" py-4 border-b border-black lg:py-0 lg:flex lg:justify-end">
+    <div class="container lg:basis-11/12 flex justify-between items-center">
+      <h1><a
+          id="logo"
+          href="/week8"
+        ><img
+            class="w-[86px] lg:w-[190px]"
+            src="./assets/images/logo.svg"
+            alt="logo.svg"
+          ></a></h1>
+      <div
+        id="search"
+        class="hidden items-center w-full"
+      >
+        <i
+          id="backMenu"
+          class="fas fa-angle-left"
+        ></i>
+        <div class="w-full px-4">
+          <input
+            type="text"
+            placeholder="搜尋作品名稱、藝術家名稱"
+            class=" bg-transparent p-0 border-0 w-full focus:ring-transparent"
+          >
+        </div>
+      </div>
+      <ul class="flex gap-x-6 lg:gap-0">
+        <li class="hidden lg:py-8 lg:block border-x lg:-mr-[1px]">
+          <div class="flex items-center w-full lg:px-12 ">
+            <div class="w-[288px] mr-6">
+              <input
+                type="text"
+                placeholder="搜尋作品名稱、藝術家名稱"
+                class="bg-transparent p-0 border-0 w-full focus:ring-transparent"
+              >
+            </div>
+            <i class="text-2xl fas fa-search"></i>
+          </div>
+        </li>
+        <li class="hidden font-bold border-x lg:block lg:px-12 lg:py-8"><a href="#">探索</a></li>
+        <li class="hidden font-bold border-x lg:block lg:px-12 lg:py-8 lg:-ml-[1px]"><a href="#">市值</a></li>
+        <li class="hidden font-bold lg:block lg:px-12 lg:py-8"><a href="#"><i class="fas fa-wallet"></i></a></li>
+        <li
+          id="searchBtn"
+          class="lg:hidden"
+        ><i class="text-2xl fas fa-search"></i></li>
+        <li
+          class="lg:hidden"
+          id="mMenuBtn"
+        >
+          <i class="text-2xl fas fa-bars"></i>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div
+    class="bg-white hidden"
+    id="mMenu"
+  >
+    <div class="container">
+      <ul class="text-center pb-6">
+        <li class="py-6 border-b"><a
+            class="block font-bold text-lg"
+            href="#"
+          >探索</a></li>
+        <li class="py-6"><a
+            class="block font-bold text-lg"
+            href="#"
+          >市值</a></li>
+        <li class="bg-main border border-1 border-black py-3 text-white"><a
+            class="block"
+            href="#"
+          >連結錢包</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <section class="py-6 ">
+  <div class="container flex flex-col gap-4 lg:gap-6 lg:flex-row">
+    <div class="border lg:basis-9/12 lg:flex">
+      <div class="lg:basis-5/12">
+        <img
+          class="w-full h-full"
+          src="./assets/images/artist01.jpg"
+          alt="artist01.jpg"
+        >
+      </div>
+      <div class="py-6 px-[14px] bg-white lg:basis-7/12 lg:p-6">
+        <div class="flex justify-between items-center mb-2">
+          <h2 class="font-Squada text-[32px] leading-[34px] lg:text-5xl leading-[50px]">Michael</h2>
+          <ul class="flex gap-x-2">
+            <li><a href="#"><i class="text-[21px] leading-4 fa-brands fa-discord"></i></a></li>
+            <li><a href="#"><i class="text-[21px] leading-4 fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="text-[21px] leading-4 fa-solid fa-globe"></i></a></li>
+            <li><a href="#"><i class="text-[21px] leading-4 fa-brands fa-twitter"></i></a></li>
+          </ul>
+        </div>
+        <h6 class="font-Squada mb-6">0x3ya666…88ef</h6>
+        <p>Michael自小在山林長大，能夠與花草樹木大自然進行靈體溝通，創作題材常見大山、大水、花草與樹木，從日常生活出發，擁有個⼈獨樹⼀格的創作風格，作品觸及靈魂深處、探索未知宇宙，透過與大自然的溝通，探討著存在的本質。​
+        </p>
+      </div>
+    </div>
+    <ul class="flex flex-col  bg-white border lg:basis-3/12">
+      <li class="basis-full flex justify-between border-b py-4 px-6"><span class="font-bold leading-8">販售中</span><span
+          class="font-Squada text-[32px] leading-none"
+        >168</span></li>
+      <li class="basis-full flex justify-between border-b py-4 px-6"><span class="font-bold leading-8">地板價格</span><span
+          class="font-Squada text-[32px] leading-none"
+        >0.6 ETH</span></li>
+      <li class="basis-full flex justify-between border-b py-4 px-6"><span class="font-bold leading-8">7 日成交</span><span
+          class="font-Squada text-[32px] leading-none"
+        >8.8 ETH</span></li>
+      <li class="basis-full flex justify-between border-b py-4 px-6 -mb-[1px]"><span class="font-bold leading-8">30
+          日成交</span><span class="font-Squada text-[32px] leading-none">23.1 ETH</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="relative border-b-4 border-b-black flex after:w-full after:h-[1px] after:block after:bg-black after:absolute after:bottom-2 after:left-0">
+  <div class="container">
+    <ul class="font-Squada flex w-full">
+      <li class="tab-item text-gray text-[32px] leading-[34px] p-4 border-b border-b-black flex-grow tab-active">Art
+        Works</li>
+      <li class="tab-item text-gray text-[32px] leading-[34px] p-4 border-b border-b-black flex-grow">Collection</li>
+    </ul>
+    <div
+      data-area="tab-artworks "
+    >
+      <div class="w-full flex flex-col gap-4 py-6 lg:gap-0">
+        <div class="relative bg-white py-8 px-4 border flex lg:pt-12 lg:pb-0 lg:mb-[88px]">
+          <div class="basis-full lg:basis-10/12 mx-auto">
+            <h2 class="font-bold text-2xl mb-4">追求者送我的花</h2>
+            <div class="flex flex-col lg:flex-row lg:justify-between ">
+              <p class="mb-6 lg:basis-9/12 lg:mb-0">我又沒有特別喜歡花，為什麼不給我現金就好，擺在那也不知道要幹嘛，只好畫起來看有沒有人要買，阿不然如果真的喜歡我，把這些都買回去八。</p>
+              <div class="mt-4 text-center hidden lg:block lg:basis-3/12 lg:text-right">
+                <a
+                  href="#"
+                  class=" relative font-Squada px-12 py-2 border border-black text-lg hover:bg-main hover:text-white after:block after:border-l-transparent after:border-b-main hover:after:border-b-black after:border-t-transparent after:border-r-transparent after:absolute after:right-0 after:bottom-0 after:border-t-0 after:border-r-0 after:border-l-[16px] after:border-b-[16px]"
+                >MORE</a>
+              </div>
+            </div>
+              <div class="flex justify-between lg:translate-y-12">
+                <div class="w-[304px] h-[312px] lg:w-[263px] lg:h-[270px] mx-auto lg:mx-0">
+                  <img
+                    class="border-[10px] border-black w-full h-full object-cover object-center"
+                    src="./assets/images/the-new-york-public-library-vBejyCBXZBY-unsplash.jpg"
+                    alt="the-new-york-public-library-vBejyCBXZBY-unsplash.jpg"
+                  >
+                </div>
+                <div class="hidden w-[263px] h-[270px] lg:block">
+                  <img
+                    class=" border-[10px] border-black w-full h-full object-cover object-center "
+                    src="./assets/images/art13.jpg"
+                    alt="art13.jpg"
+                  >
+                </div>
+                <div class="hidden w-[263px] h-[270px] lg:block">
+                  <img
+                    class=" border-[10px] border-black w-full h-full object-cover object-center "
+                    src="./assets/images/art14.jpg"
+                    alt="art14.jpg"
+                  >
+                </div>
+                <div class="hidden w-[263px] h-[270px] lg:block">
+                  <img
+                    class=" border-[10px] border-black w-full h-full object-cover object-center "
+                    src="./assets/images/art13.jpg"
+                    alt="art13.jpg"
+                  >
+                </div>
+              </div>
+              <div class="mt-4 text-center lg:hidden">
+                <a
+                  href="#"
+                  class=" relative font-Squada px-12 py-2 border border-black text-lg hover:bg-main hover:text-white after:block after:border-l-transparent after:border-b-main hover:after:border-b-black after:border-t-transparent after:border-r-transparent after:absolute after:right-0 after:bottom-0 after:border-t-0 after:border-r-0 after:border-l-[16px] after:border-b-[16px]"
+                >MORE</a>
+              </div>
+        
+            <div
+              class="absolute left-0 top-0 w-0 h-0 border-t-[24px] border-r-[24px] border-l-0 border-b-0 border-t-black border-x-transparent border-b-transparent"
+            ></div>
+            <div
+              class="absolute right-0 top-0 w-0 h-0 border-t-0 border-r-[24px] border-l-0 border-b-[24px] border-r-black border-y-transparent border-t-transparent"
+            ></div>
+          </div>
+        </div>
+        <div class="relative bg-white py-8 px-4 border flex lg:pt-12 lg:pb-0 lg:mb-[88px]">
+          <div class="basis-full lg:basis-10/12 mx-auto">
+            <h2 class="font-bold text-2xl mb-4">我家窗前的鳥</h2>
+            <div class="flex flex-col lg:flex-row lg:justify-between ">
+              <p class="mb-6 lg:basis-9/12 lg:mb-0">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+              <div class="mt-4 text-center hidden lg:block lg:basis-3/12 lg:text-right">
+                <a
+                  href="#"
+                  class=" relative font-Squada px-12 py-2 border border-black text-lg hover:bg-main hover:text-white after:block after:border-l-transparent after:border-b-main hover:after:border-b-black after:border-t-transparent after:border-r-transparent after:absolute after:right-0 after:bottom-0 after:border-t-0 after:border-r-0 after:border-l-[16px] after:border-b-[16px]"
+                >MORE</a>
+              </div>
+            </div>
+              <div class="flex justify-between lg:translate-y-12">
+                <div class="w-[304px] h-[312px] lg:w-[263px] lg:h-[270px] mx-auto lg:mx-0">
+                  <img
+                    class="border-[10px] border-black w-full h-full object-cover object-center"
+                    src="./assets/images/art27.jpg"
+                    alt="art27.jpg"
+                  >
+                </div>
+                <div class="hidden w-[263px] h-[270px] lg:block">
+                  <img
+                    class=" border-[10px] border-black w-full h-full object-cover object-center "
+                    src="./assets/images/art20.jpg"
+                    alt="art20.jpg"
+                  >
+                </div>
+                <div class="hidden w-[263px] h-[270px] lg:block">
+                  <img
+                    class=" border-[10px] border-black w-full h-full object-cover object-center "
+                    src="./assets/images/art26.jpg"
+                    alt="art26.jpg"
+                  >
+                </div>
+                <div class="hidden w-[263px] h-[270px] lg:block">
+                  <img
+                    class=" border-[10px] border-black w-full h-full object-cover object-center "
+                    src="./assets/images/art22.jpg"
+                    alt="art22.jpg"
+                  >
+                </div>
+              </div>
+              <div class="mt-4 text-center lg:hidden">
+                <a
+                  href="#"
+                  class=" relative font-Squada px-12 py-2 border border-black text-lg hover:bg-main hover:text-white after:block after:border-l-transparent after:border-b-main hover:after:border-b-black after:border-t-transparent after:border-r-transparent after:absolute after:right-0 after:bottom-0 after:border-t-0 after:border-r-0 after:border-l-[16px] after:border-b-[16px]"
+                >MORE</a>
+              </div>
+        
+            <div
+              class="absolute left-0 top-0 w-0 h-0 border-t-[24px] border-r-[24px] border-l-0 border-b-0 border-t-black border-x-transparent border-b-transparent"
+            ></div>
+            <div
+              class="absolute right-0 top-0 w-0 h-0 border-t-0 border-r-[24px] border-l-0 border-b-[24px] border-r-black border-y-transparent border-t-transparent"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-collection hidden">
+      <p>collection content</p>
+    </div>
+  </div>
+
+</section>
+  </main>
+
+  <footer class="py-6 text-center">
+    © ART NFT. All Rights Reserved
+  </footer>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

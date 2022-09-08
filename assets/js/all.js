@@ -1,8 +1,5 @@
 "use strict";
 
-var _require = require('jquery'),
-    Callbacks = _require.Callbacks;
-
 $(function () {
   $('#mMenuBtn').on('click', function () {
     $('#mMenu').slideToggle();
@@ -17,6 +14,9 @@ $(function () {
     $('#mMenuBtn').show();
     $('#search').removeClass('flex').addClass('hidden');
   });
+  $('.tab-item').on('click', function () {
+    $(this).addClass('tab-active').siblings().removeClass('tab-active');
+  });
   var swiper = new Swiper('.mySwiper', {
     loop: true,
     autoplay: {
@@ -29,12 +29,14 @@ $(function () {
   var $artwork = $('.artwork').masonry({
     // options...
     itemSelector: '.work-item',
-    // columnWidth: calc(50% - 24),
-    percentPosition: true,
-    gutter: 24
+    columnWidth: '.work-sizer',
+    gutter: '.gutter-sizer',
+    animate: true,
+    horizontalOrder: true,
+    percentPosition: true
   });
   $artwork.imagesLoaded().progress(function () {
-    $artwork.masonry();
+    $artwork.masonry('layout');
   });
 });
 //# sourceMappingURL=all.js.map
