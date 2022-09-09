@@ -15,7 +15,6 @@ module.exports = {
         light: '#F0F0F0',
         main: '#E6553B',
         gray: '#808080',
-        'light-gray': '#F0F0F0',
       },
       fontSize: {
         sm: '0.875rem',
@@ -24,6 +23,7 @@ module.exports = {
         xl: '1.25rem',
         '2xl': '1.5rem',
         '5xl': '3rem',
+        80: '80px',
       },
       fontFamily: {
         Squada: ['"Squada One"'],
