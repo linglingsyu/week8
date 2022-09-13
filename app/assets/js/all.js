@@ -9,6 +9,11 @@ $(function () {
     $('#search').removeClass('hidden').addClass('flex')
   })
 
+  $('.valueBtn').on('click',function(){
+    console.log($(this).children('.valueContent'))
+    $(this).parent().siblings('.valueContent').slideToggle()
+  })
+
   $('#backMenu').on('click', function () {
     $('#logo').show()
     $('#mMenuBtn').show()
@@ -23,9 +28,10 @@ $(function () {
       $('#tab-collection').fadeOut()
     }else{
       $('#tab-artworks').fadeOut()
-      $('#tab-collection').removeClass('opacity-0').fadeIn()
-      
+      $('#tab-collection').removeClass('opacity-0').fadeIn() 
     }
+
+
   })
 
   var swiper = new Swiper('.mySwiper', {
