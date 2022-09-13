@@ -9,6 +9,10 @@ $(function () {
     $('#mMenuBtn').hide();
     $('#search').removeClass('hidden').addClass('flex');
   });
+  $('.valueBtn').on('click', function () {
+    console.log($(this).children('.valueContent'));
+    $(this).parent().siblings('.valueContent').slideToggle();
+  });
   $('#backMenu').on('click', function () {
     $('#logo').show();
     $('#mMenuBtn').show();
